@@ -22,6 +22,9 @@ On 10 iterations :
 
 Further Optimization :-
 AlphaZero :
-●	AlphaZero is computer program developed by artificial intelligence research company DeepMind
+●	AlphaZero is computer program developed by artificial intelligence research company DeepMind 
+
 ●	In this algorithm the rollout step is replaced by current neural networks.
+
 ●	It uses the probability distribution of each child node to select the best node.
+
