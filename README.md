@@ -2,7 +2,7 @@
 
 Chess Engine which predicts the moves using monte carlo tree search algorithm.
 
-Infrastructure:-
+## Infrastructure:-
 
 We are implementing the algorithm using python. Python-chess library is also required for move generation and validation.
 
@@ -11,7 +11,7 @@ Python-chess library can be installed using the command:
 pip install chess 
 
 
-Approach:-
+## Approach:-
 
 MCTS a probabilistic and heuristic driven search algorithm that combines the classic tree search implementations alongside machine learning principles of reinforcement learning.
 
@@ -31,17 +31,17 @@ UCB = V + 2*sqrt(lnN / ni)        here V = Winning score of the current node
 
 
 
-1.Selection :-
+### 1.Selection :-
 
 In this step we iterate through all child nodes of the current node and return the node with maximum ucb value.
 
 
-2.Expansion :- 
+### 2.Expansion :- 
 
 In this step we keep on selecting the child node with maximum ucb value till we reach a leaf node.
 
 
-3. Roll Out/Simulation :-
+### 3. Roll Out/Simulation :-
 
 In this step we add all possible child nodes to the current node and then randomly select a child node.
 
@@ -50,7 +50,7 @@ We repeat this process until the game is over i.e no more moves are possible to 
 We return 1 for win, -1 for loss and 0.5 for a draw.
 
 
-4.Backpropagation :-
+### 4.Backpropagation :-
 
 In this step we backpropagate from the new node to the root node. During the process, the number of simulations stored in each node is incremented. 
 
@@ -60,7 +60,7 @@ If the new node’s simulation results in a win, then the number of wins is also
 
 ![image](https://user-images.githubusercontent.com/53829692/153834088-fd7626c1-180d-49bf-be28-4c3ce3f50ed1.png)
 
-Result :-
+## Result :-
 
 ●	1-0 = White Player Won the match
 
@@ -68,13 +68,13 @@ Result :-
 
 ●	1/2 -1/2 = Match Draw
 
-On 1 iteration :
+### On 1 iteration :
 
 ![image](https://user-images.githubusercontent.com/53829692/153834153-b8dc51df-af00-4527-b8f7-23c4e086dd97.png)
 
 ![image](https://user-images.githubusercontent.com/53829692/153834184-a5ceb885-669a-485a-a651-3ec2bdcc80c4.png)
 
-On 10 iterations :
+### On 10 iterations :
 
 ![image](https://user-images.githubusercontent.com/53829692/153834237-2765b6df-6561-4935-8860-b2b780955acb.png)
 
