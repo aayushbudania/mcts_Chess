@@ -13,7 +13,7 @@ pip install chess
 
 ## Approach:-
 
-MCTS a probabilistic and heuristic driven search algorithm that combines the classic tree search implementations alongside machine learning principles of reinforcement learning.
+MCTS is a probabilistic and heuristic driven search algorithm that combines the classic tree search implementations alongside machine learning principles of reinforcement learning.
 
 It consists of four stages : selection -> Expansion -> Roll Out -> Backpropagation
 
